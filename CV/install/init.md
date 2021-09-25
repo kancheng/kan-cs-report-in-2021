@@ -1,16 +1,22 @@
 # CV Homework
 
+## 0. About
 1. 安裝 Anaconda
 2. 建立與刪除虛擬環境
 3. 安裝 OpenCV, Numpy, Matplotlib
 4. 學習 Numpy 和 CV2 套件使用
 5. 使用 OpenCV 進行，檢測人臉
+* 讀取圖片
+* 使用 opencv 的 cv2.CascadeClassifier 檢測人臉位置
+* 畫出方框，寫上文庫，顯示圖片
 
-## 1. Anaconda 安裝
+## 1. Anaconda install
 
 Link : https://www.anaconda.com/
 
 ### Windows
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install/pic/1.png)
 
 ### Mac
 
