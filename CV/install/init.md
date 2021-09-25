@@ -23,6 +23,14 @@ Link : https://www.anaconda.com/
 
 ### Ubuntu
 
+
+指令安裝
+
+```
+$ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+$ wegt https://repo.anaconda.com/archive/Anaconda3-[Anaconda 的版本 ]-Linux-x86_64.sh
+```
+
 ## 2. 建立與刪除虛擬環境
 
 ## 3. 安裝 OpenCV, Numpy, Matplotlib
