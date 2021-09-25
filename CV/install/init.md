@@ -17,6 +17,7 @@ Link : https://www.anaconda.com/
 ### Windows
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install/pic/1.png)
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install/pic/2.png)
 
 ### Mac
 
