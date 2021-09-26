@@ -134,34 +134,34 @@ $ conda -V
 创建环境 - 建立
 
 ```
-conda create -n tcmd python=3.8 
+$ conda create -n tcmd python=3.8 
 ```
 
 
 删除环境 - 刪除
 
 ```
-conda remove -n tcmd --all
+$ conda remove -n tcmd --all
 ```
 
 
 激活环境 - 啟動
 
 ```
-conda activate tcmd
+$ conda activate tcmd
 ```
 
 
 退出环境 - 退出
 
 ```
-conda deactivate 
+$ conda deactivate 
 ```
 
 檢視
 
 ```
-conda info -e
+$ conda info -e
 ```
 
 ### Demo command line - activate and deactivate
@@ -204,21 +204,21 @@ conda info -e
 ### OpenCV
 
 ```
-pip install opencv-python
+$ pip install opencv-python
 ```
 
 
 ### Numpy
 
 ```
-pip install numpy
+$ pip install numpy
 ```
 
 
 ### Matplotlib
 
 ```
-pip install matplotlib
+$ pip install matplotlib
 ```
 
 ### Demo command line - install package
@@ -243,7 +243,31 @@ pip install matplotlib
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/23.png)
 
 
+> 當然也可以用圖型介面安裝
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/other1.png)
+
+
 ## 4. 學習 Numpy 和 CV2 套件使用
+
+事前準備在先前指定環境前用一個專屬的 jupyter notebook
+
+```
+$ conda install jupyter notebook
+```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/24.png)
+
+
+執行 jupyter notebook
+
+```
+$ jupyter notebook
+```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/25.png)
+
+
 
 
 ## 5. 使用 OpenCV 進行，檢測人臉
