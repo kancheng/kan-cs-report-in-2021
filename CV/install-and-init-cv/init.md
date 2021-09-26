@@ -510,7 +510,7 @@ Demo Reference - Dune | Official Main Trailer - Base on 'Warner Bros. Pictures' 
 
 Code
 
-> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/use-opencv.ipynb)
+> `install-and-init-cv/code/use-opencv.ipynb` [HERE](code/use-opencv.ipynb)
 
 
 ### 5-1 讀取圖片
