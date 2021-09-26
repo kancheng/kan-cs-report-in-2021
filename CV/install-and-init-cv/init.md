@@ -498,10 +498,125 @@ cv2.destroyAllWindows() # de
 ## 5. 使用 OpenCV 進行，檢測人臉
 
 
+Reference
+
+> https://pythonexamples.org/python-opencv/
+
+
+Demo Reference - Dune | Official Main Trailer - Base on 'Warner Bros. Pictures' Youtube Channel 
+
+> https://www.youtube.com/watch?v=8g18jFHCLXk
+
+
+Code
+
+> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/init-numpy-and-opencv.ipynb)
+
+
 ### 5-1 讀取圖片
+
+Read Image to Array – cv2.imread()
+
+```
+import cv2
+#read image
+img = cv2.imread('opencv-test/2.png')
+#print its shape
+print('Image Dimensions :', img.shape)
+```
 
 ### 5-2 使用 opencv 的 cv2.CascadeClassifier 檢測人臉位置
 
+Reference - 知乎
+
+> https://zhuanlan.zhihu.com/p/128444328
+
+
+Before 下載到官方的 `haarcascade_frontalface_default.xml`, `haarcascade_eye.xml`。
+
+> https://github.com/opencv/opencv
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/37.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/38.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/39.png)
+
+
+設定好路徑與目錄
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/40.png)
+
+
+Reference Code
+
+```
+import numpy as np
+import cv2
+
+# 找人臉
+face = cv2.CascadeClassifier('face/haarcascade_frontalface_default.xml')
+
+# 找眼睛
+eye = cv2.CascadeClassifier('face/haarcascade_eye.xml')
+
+# 攝像頭
+cap = cv2.VideoCapture(0)
+ok = True
+
+while ok:
+    # 讀取攝影機的頭像，ok 為判斷讀取成功
+    ok, img = cap.read()
+    # 轉換成灰度
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # 人臉檢測
+    faces = face.detectMultiScale(
+        gray,     
+        scaleFactor=1.2,
+        minNeighbors=5,     
+        minSize=(32, 32)
+    )
+
+    # 在人臉上找眼睛
+    for (x, y, w, h) in faces:
+        fac_gray = gray[y: (y+h), x: (x+w)]
+        result = []
+        eyes = eye.detectMultiScale(fac_gray, 1.3, 2)
+
+        # 眼睛座標位置，相對座標轉絕對
+        for (ex, ey, ew, eh) in eyes:
+            result.append((x+ex, y+ey, ew, eh))
+
+    # 畫方框
+    for (x, y, w, h) in faces:
+        cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
+    for (ex, ey, ew, eh) in result:
+        cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (0, 255, 0), 2)
+
+    cv2.imshow('video', img)
+
+    k = cv2.waitKey(1)
+    if k == 27:    # press 'ESC' to quit
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+```
+
+測試成功
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/41.png)
+
+
+
 ### 5-3 畫出方框，寫上文庫，顯示圖片
 
+
+> 將之前電影預告截圖的人臉辨識版本
+
+```
+
+```
 
