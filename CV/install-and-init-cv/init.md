@@ -617,6 +617,37 @@ cv2.destroyAllWindows()
 > 將之前電影預告截圖的人臉辨識版本
 
 ```
+import numpy as np
+import cv2
+img_path = 'opencv-test/1.png'
+img = cv2.imread(img_path)
+if img is None:
+    print("ERROR")
+    exit(1)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
+FaceCascade = cv2.CascadeClassifier('moface/haarcascade_frontalface_default.xml')
+
+faces = FaceCascade.detectMultiScale(
+    gray,
+    scaleFactor=1.1,
+    minNeighbors=5
+)
+
+for face in faces:
+    (x, y, w, h) = face
+    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 4)
+cv2.namedWindow('Face',flags=cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO | cv2.WINDOW_GUI_EXPANDED)
+cv2.imshow('Face', img)
+cv2.imwrite('o1.jpg', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/42.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/43.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/44.png)
+
 
