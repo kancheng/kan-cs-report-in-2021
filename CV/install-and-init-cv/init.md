@@ -124,6 +124,41 @@ $ conda -V
 >
 
 
+创建环境 - 建立
+
+```
+conda create -n tcmd python=3.8 
+```
+ 
+
+删除环境 - 刪除
+
+```
+conda remove -n tcmd --all
+```
+ 
+
+
+激活环境 - 啟動
+
+```
+conda activate tcmd
+```
+ 
+
+退出环境 - 退出
+
+```
+conda deactivate 
+```
+
+檢視
+
+```
+conda info -e
+```
+
+
 ## 3. 安裝 OpenCV, Numpy, Matplotlib
 
 ## 4. 學習 Numpy 和 CV2 套件使用
