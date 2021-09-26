@@ -118,6 +118,12 @@ $ conda -V
 
 ## 2. 建立與刪除虛擬環境
 
+> 建議 Windows 的 Anaconda 要用系統管理員權限
+>
+> 另外若用 PowerShell 要在系統管理員權限上先用在好 PowerShell ISE 的 get-executionpolicy 詳見 [HERE](docu/other-powershell-conda-error.md)
+>
+
+
 ## 3. 安裝 OpenCV, Numpy, Matplotlib
 
 ## 4. 學習 Numpy 和 CV2 套件使用
