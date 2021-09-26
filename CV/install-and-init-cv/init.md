@@ -221,6 +221,13 @@ pip install numpy
 pip install matplotlib
 ```
 
+### Demo command line - install package
+
+建立一個名為 opencv 的環境
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/20.png)
+
+
 
 ## 4. 學習 Numpy 和 CV2 套件使用
 
