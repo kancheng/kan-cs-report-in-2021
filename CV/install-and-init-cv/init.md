@@ -510,7 +510,7 @@ Demo Reference - Dune | Official Main Trailer - Base on 'Warner Bros. Pictures' 
 
 Code
 
-> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/init-numpy-and-opencv.ipynb)
+> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/use-opencv.ipynb)
 
 
 ### 5-1 讀取圖片
@@ -649,5 +649,9 @@ cv2.destroyAllWindows()
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/43.png)
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/44.png)
+
+>  打完收工 !!! OwO ///
+
+
 
 
