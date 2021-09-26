@@ -272,7 +272,14 @@ $ jupyter notebook
 
 ### Numpy
 
-> Reference : https://cs231n.github.io/python-numpy-tutorial/
+Reference
+
+> https://cs231n.github.io/python-numpy-tutorial/
+
+
+Code
+
+> `install-and-init-cv/code/init-numpy-and-opencv.ipynb`[HERE](code/init-numpy-and-opencv.ipynb)
 
 Array
 
