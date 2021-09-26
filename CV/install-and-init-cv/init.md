@@ -228,6 +228,20 @@ pip install matplotlib
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/20.png)
 
 
+安裝 OpenCV
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/21.png)
+
+
+安裝 Numpy
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/22.png)
+
+
+安裝 Matplotlib
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/23.png)
+
 
 ## 4. 學習 Numpy 和 CV2 套件使用
 
