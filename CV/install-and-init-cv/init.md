@@ -250,6 +250,8 @@ $ pip install matplotlib
 
 ## 4. 學習 Numpy 和 CV2 套件使用
 
+### Before
+
 事前準備在先前指定環境前用一個專屬的 jupyter notebook
 
 ```
@@ -268,6 +270,149 @@ $ jupyter notebook
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/25.png)
 
 
+### Numpy
+
+> Reference : https://cs231n.github.io/python-numpy-tutorial/
+
+Array
+
+```
+import numpy as np
+
+# 建立一個陣列 (數組)
+test = np.array([9, 4, 8, 7])
+
+# 印出型別
+print(type(test))
+
+print(test.shape)
+print(test[0], test[1], test[2], test[3])
+test[0] = 5
+print(test)
+
+npt = np.array([[6,8,9],[4,8,7]])
+print(npt.shape)
+print(npt[0, 0], npt[0, 1], npt[1, 0])
+
+```
+
+```
+import numpy as np
+
+# 建立全 0 陣列
+a = np.zeros((2,2))
+print(a)
+
+# 建立全 1 陣列
+b = np.ones((1,2))
+print(b)
+
+# 建立全 7 陣列
+# Create a constant array
+c = np.full((2,2), 7)  
+print(c)
+
+# Create a 2x2 identity matrix
+d = np.eye(2)
+print(d)
+
+# Create an array filled with random values
+e = np.random.random((2,2))
+print(e)
+```
+
+
+Array indexing
+
+```
+import numpy as np
+
+# Create the following rank 2 array with shape (3, 4)
+a = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+
+# Use slicing to pull out the subarray consisting of the first 2 rows
+# and columns 1 and 2; b is the following array of shape (2, 2):
+b = a[:2, 1:3]
+
+# A slice of an array is a view into the same data, so modifying it will modify the original array.
+print(a[0, 1])
+b[0, 0] = 77
+print(a[0, 1])
+```
+
+
+Datatypes
+
+```
+import numpy as np
+
+x = np.array([1, 2])
+print(x.dtype)
+
+x = np.array([1.0, 2.0])
+print(x.dtype)
+
+x = np.array([1, 2], dtype=np.int64)
+print(x.dtype)
+```
+
+Array math
+
+```
+import numpy as np
+
+x = np.array([[1,2],[3,4]], dtype=np.float64)
+y = np.array([[5,6],[7,8]], dtype=np.float64)
+
+print(x + y)
+print(np.add(x, y))
+
+print(x - y)
+print(np.subtract(x, y))
+
+print(x * y)
+print(np.multiply(x, y))
+
+print(x / y)
+print(np.divide(x, y))
+
+print(np.sqrt(x))
+```
+
+
+Broadcasting
+
+```
+import numpy as np
+
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+y = np.empty_like(x)
+
+for i in range(4):
+    y[i, :] = x[i, :] + v
+print(y)
+```
+
+```
+import numpy as np
+
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+vv = np.tile(v, (4, 1))
+print(vv)
+y = x + vv
+print(y)
+```
+
+```
+import numpy as np
+
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+y = x + v
+print(y)
+```
 
 
 ## 5. 使用 OpenCV 進行，檢測人臉
