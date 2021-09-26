@@ -1,7 +1,7 @@
 # CV Homework
 
 ## 0. About
-1. 安裝 Anaconda
+1. ['安裝 Anaconda'](#user-content-1-anaconda-install)
 2. 建立與刪除虛擬環境
 3. 安裝 OpenCV, Numpy, Matplotlib
 4. 學習 Numpy 和 CV2 套件使用
