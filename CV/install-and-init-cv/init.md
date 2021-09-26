@@ -296,6 +296,9 @@ print(npt[0, 0], npt[0, 1], npt[1, 0])
 
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/26.png)
+
+
 ```
 import numpy as np
 
@@ -321,6 +324,8 @@ e = np.random.random((2,2))
 print(e)
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/27.png)
+
 
 Array indexing
 
@@ -340,6 +345,8 @@ b[0, 0] = 77
 print(a[0, 1])
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/28.png)
+
 
 Datatypes
 
@@ -355,6 +362,9 @@ print(x.dtype)
 x = np.array([1, 2], dtype=np.int64)
 print(x.dtype)
 ```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/29.png)
+
 
 Array math
 
@@ -379,6 +389,8 @@ print(np.divide(x, y))
 print(np.sqrt(x))
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/30.png)
+
 
 Broadcasting
 
@@ -394,6 +406,9 @@ for i in range(4):
 print(y)
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/31.png)
+
+
 ```
 import numpy as np
 
@@ -405,6 +420,9 @@ y = x + vv
 print(y)
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/32.png)
+
+
 ```
 import numpy as np
 
@@ -413,6 +431,9 @@ v = np.array([1, 0, 1])
 y = x + v
 print(y)
 ```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/33.png)
+
 
 
 ## 5. 使用 OpenCV 進行，檢測人臉
