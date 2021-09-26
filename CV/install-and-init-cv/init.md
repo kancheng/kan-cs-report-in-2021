@@ -279,7 +279,8 @@ Reference
 
 Code
 
-> `install-and-init-cv/code/init-numpy-and-opencv.ipynb`[HERE](code/init-numpy-and-opencv.ipynb)
+> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/init-numpy-and-opencv.ipynb)
+
 
 Array
 
@@ -440,6 +441,57 @@ print(y)
 ```
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/33.png)
+
+
+
+### OpenCV
+
+Reference
+
+> https://pythonexamples.org/python-opencv/
+
+
+Demo Reference - Dune | Official Main Trailer - Base on 'Warner Bros. Pictures' Youtube Channel 
+
+> https://www.youtube.com/watch?v=8g18jFHCLXk
+
+
+Code
+
+> `install-and-init-cv/code/init-numpy-and-opencv.ipynb` [HERE](code/init-numpy-and-opencv.ipynb)
+
+
+Read Image to Array – cv2.imread()
+
+```
+import cv2
+#read image
+img = cv2.imread('opencv-test/1.png')
+#print its shape
+print('Image Dimensions :', img.shape)
+```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/34.png)
+
+
+Show Image – imshow()
+
+```
+import cv2
+
+#read image 
+img = cv2.imread('opencv-test/1.png')
+ 
+#show image
+cv2.imshow('Example - Show image in window',img)
+ 
+cv2.waitKey(0) # waits until a key is pressed
+cv2.destroyAllWindows() # de
+```
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/35.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/36.png)
 
 
 
