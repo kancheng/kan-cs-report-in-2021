@@ -44,24 +44,30 @@
 
 activate 呈現無法運作的狀態
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/1.png)
+
 
 
 使用 conda init powershell，開啟的 PowerShell。
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/2.png)
 
 
 PowerShell 出現新的錯誤訊息。
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/3.png)
 
 
 在 系統管理員的 PowerShell ISE 下解除模式
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/4.png)
 
 
 全部皆是
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/5.png)
 
 
 完成  !!!
 
-
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/docu/pic/6.png)
