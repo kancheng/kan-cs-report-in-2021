@@ -120,8 +120,15 @@ $ conda -V
 
 > 建議 Windows 的 Anaconda 要用系統管理員權限
 >
-> 另外若用 PowerShell 要在系統管理員權限上先用在好 PowerShell ISE 的 get-executionpolicy 詳見 [HERE](docu/other-powershell-conda-error.md)
+> 另外若在 `Windows` 用 PowerShell 要在系統管理員權限上先用在好 PowerShell ISE 的 get-executionpolicy 詳見 [HERE](docu/other-powershell-conda-error.md),當然若是在 `UNIX-like`  則沒有這個問題。 
 >
+
+
+圖型介面新增與操作
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/13.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/14.png)
 
 
 创建环境 - 建立
@@ -129,14 +136,13 @@ $ conda -V
 ```
 conda create -n tcmd python=3.8 
 ```
- 
+
 
 删除环境 - 刪除
 
 ```
 conda remove -n tcmd --all
 ```
- 
 
 
 激活环境 - 啟動
@@ -144,7 +150,7 @@ conda remove -n tcmd --all
 ```
 conda activate tcmd
 ```
- 
+
 
 退出环境 - 退出
 
@@ -157,6 +163,35 @@ conda deactivate
 ```
 conda info -e
 ```
+
+### Demo command line - activate and deactivate
+
+> 建議觀察指令的變化
+
+建立
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/15.png)
+
+
+啟動與退出
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/16.png)
+
+
+可以看到圖形介面中的建立是成功的狀態
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/17.png)
+
+
+移除
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/18.png)
+
+
+移除成功
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/19.png)
+
 
 
 ## 3. 安裝 OpenCV, Numpy, Matplotlib
