@@ -101,6 +101,7 @@ $ jupyter notebook
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/install-and-init-cv/pic/12.png)
 
+
 查看 Anaconda 版本 
 
 ```
