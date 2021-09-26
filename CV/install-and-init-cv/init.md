@@ -196,6 +196,32 @@ conda info -e
 
 ## 3. 安裝 OpenCV, Numpy, Matplotlib
 
+
+大陸地區請支持 `Tsinghua University` 
+
+> pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
+
+### OpenCV
+
+```
+pip install opencv-python
+```
+
+
+### Numpy
+
+```
+pip install numpy
+```
+
+
+### Matplotlib
+
+```
+pip install matplotlib
+```
+
+
 ## 4. 學習 Numpy 和 CV2 套件使用
 
 
