@@ -13,9 +13,6 @@
 ```
 2. 用 yuv viwer 等工具觀察正確性
 
-> https://github.com/IENT/YUView
-
-
 
 ## Details
 
