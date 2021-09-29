@@ -1,6 +1,6 @@
 # DSP
 
-> 2101212850 - 干皓丞
+> 信息工程學院 - 2021 級 - 2101212850 - 干皓丞
 
 ## About
 
@@ -20,6 +20,12 @@ Reference
 > http://blog.sina.com.cn/s/blog_9b74cfb701018upj.html
 >
 
+
+可以使用 Windows 文檔搜索，或者使用 Linux 指令，將 find & grep 混合再一起爬檔案內容的關鍵字。 
+
+>
+> find . -name "*.*" |xargs grep "MotionEstimatorBase" *.*
+>
 
 ## Details
 
@@ -523,16 +529,21 @@ third_step: // the third step with a small search pattern
 2. 下載專案
 
 > https://github.com/opencv/opencv
+>
+> https://github.com/opencv/opencv_contrib
 > 
 > Releases: OpenCV 4.5.3
 >
 
-#### 官方說明文件
+2. 官方說明文件
 
-
+>
 > 文件版本 4.5.3
+>
+> Link : https://docs.opencv.org/4.5.3/d4/d2c/group__videostab__motion.html
+>
 
-1. Classes
+(1) Classes
 
 ```
 class  	cv::videostab::FromFileMotionReader
@@ -556,7 +567,7 @@ class  	cv::videostab::LpMotionStabilizer
 class  	cv::videostab::MotionEstimatorBase
 
 Base class for all global motion estimation methods.
-所有全局運動估計方法的基類。
+所有全局運動估計方法的基類。(基礎!? 基本 !?)
 
 class  	cv::videostab::MotionEstimatorL1
 
@@ -581,7 +592,7 @@ class  	cv::videostab::ToFileMotionWriter
  ```
 
 
-2. Enumerations
+(2) Enumerations
 
 ```
 
@@ -596,41 +607,397 @@ enum  	cv::videostab::MotionModel {
   cv::videostab::MM_UNKNOWN = 7
 }
 ```
+
 Describes motion model between two point clouds.
+
 描述兩個點雲之間的運動模型。
 
-3. Functions
+
+(3) Functions
+
 ```
 cv::videostab::GaussianMotionFilter::GaussianMotionFilter (int radius=15, float stdev=-1.f)
  
 cv::videostab::RansacParams::RansacParams (int size, float thresh, float eps, float prob)
-Constructor. More...
+Constructor.
  
 Mat 	cv::videostab::ensureInclusionConstraint (const Mat &M, Size size, float trimRatio)
  
 Mat 	cv::videostab::estimateGlobalMotionLeastSquares (InputOutputArray points0, InputOutputArray points1, int model=MM_AFFINE, float *rmse=0)
- 	Estimates best global motion between two 2D point clouds in the least-squares sense.
- 
+
+Estimates best global motion between two 2D point clouds in the least-squares sense.
+在最小二乘意義上估計兩個二維點雲之間的最佳全局運動。
+
 Mat 	cv::videostab::estimateGlobalMotionRansac (InputArray points0, InputArray points1, int model=MM_AFFINE, const RansacParams &params=RansacParams::default2dMotion(MM_AFFINE), float *rmse=0, int *ninliers=0)
- 	Estimates best global motion between two 2D point clouds robustly (using RANSAC method).
- 
+
+Estimates best global motion between two 2D point clouds robustly (using RANSAC method).
+穩健地估計兩個 2D 點雲之間的最佳全局運動（使用 RANSAC 方法）。
+
 float 	cv::videostab::estimateOptimalTrimRatio (const Mat &M, Size size)
  
 Mat 	cv::videostab::getMotion (int from, int to, const std::vector< Mat > &motions)
- 	Computes motion between two frames assuming that all the intermediate motions are known.
+
+Computes motion between two frames assuming that all the intermediate motions are known.
+假設所有中間運動都是已知的，計算兩幀之間的運動。
 
 ```
 
-4. Detailed Description - 詳細說明
 
+(4) Detailed Description - 詳細說明
+
+```
 視頻穩定模塊包含一組函數和類，用於點雲之間或圖像之間的全局運動估計。
+
 The video stabilization module contains a set of functions and classes for global motion estimation between point clouds or between images. 
+
 在最後一種情況下，特徵是在內部提取和匹配的。
+
 In the last case features are extracted and matched internally. 
-為了方便起見，運動估計函數被包裝成類。 函數和類都可用。
-For the sake of convenience the motion estimation functions are wrapped into classes. Both the functions and the classes are available.
+
+為了方便起見，運動估計函數被包裝成類。
+
+For the sake of convenience the motion estimation functions are wrapped into classes. 
+
+函數和類都可用。
+Both the functions and the classes are available.
+```
+
+3. MotionEstimatorBase
+
+從文件中可以看到，`MotionEstimatorBase` 在文件下方寫著此描述。
+
+> Base class for all global motion estimation methods.
+
+也就是
+
+> 所有全局運動估計方法的基類。(基礎!? 基本 !?)
+
+進入文件中指出的 `global_motion.hpp`，在 OpenCV 的額外模組上。 
+
+>
+> #include <opencv2/videostab/global_motion.hpp>
+>
+> https://github.com/opencv/opencv_contrib/blob/master/modules/videostab/include/opencv2/videostab/global_motion.hpp
+>
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/DSP/motion-estimation/pic/2.png)
 
 
+```
+
+#ifndef OPENCV_VIDEOSTAB_GLOBAL_MOTION_HPP
+#define OPENCV_VIDEOSTAB_GLOBAL_MOTION_HPP
+
+#include <vector>
+#include <fstream>
+#include "opencv2/core.hpp"
+#include "opencv2/features2d.hpp"
+#include "opencv2/opencv_modules.hpp"
+#include "opencv2/videostab/optical_flow.hpp"
+#include "opencv2/videostab/motion_core.hpp"
+#include "opencv2/videostab/outlier_rejection.hpp"
+
+// <vector> - C++ 向量
+// <fstream> - 檔案控制
+
+
+#ifdef HAVE_OPENCV_CUDAIMGPROC
+#  include "opencv2/cudaimgproc.hpp"
+#endif
+
+namespace cv
+{
+namespace videostab
+{
+
+//! @addtogroup videostab_motion
+//! @{
+
+// Kan - Read
+// @brief 以最小二乘法估計兩個二維點雲之間的最佳全局運動。
+// @note 就地工作並更改輸入點數組。
+// @param points0 2D 點的源集 (32F)。
+// @param points1 目標 2D 點集 (32F)。
+// @param model 運動模型（最多 MM_AFFINE）。
+// @param rmse 最終均方根誤差。
+// @return 3x3 2D 變換矩陣 (32F)。
+//
+
+
+/** @brief Estimates best global motion between two 2D point clouds in the least-squares sense.
+@note Works in-place and changes input point arrays.
+@param points0 Source set of 2D points (32F).
+@param points1 Destination set of 2D points (32F).
+@param model Motion model (up to MM_AFFINE).
+@param rmse Final root-mean-square error.
+@return 3x3 2D transformation matrix (32F).
+ */
+CV_EXPORTS Mat estimateGlobalMotionLeastSquares(
+        InputOutputArray points0, InputOutputArray points1, int model = MM_AFFINE,
+        float *rmse = 0);
+
+
+// @brief 穩健地估計兩個二維點雲之間的最佳全局運動（使用 RANSAC 方法）。
+// @param points0 2D 點的源集 (32F)。
+// @param points1 目標 2D 點集 (32F)。
+// @param model 運動模型。參見 cv::videostab::MotionModel。
+// @param params RANSAC 方法參數。參見視頻標籤:: RansacParams。
+// @param rmse 最終均方根誤差。
+// @param ninliers 內點的最終數量。
+//
+
+/** @brief Estimates best global motion between two 2D point clouds robustly (using RANSAC method).
+@param points0 Source set of 2D points (32F).
+@param points1 Destination set of 2D points (32F).
+@param model Motion model. See cv::videostab::MotionModel.
+@param params RANSAC method parameters. See videostab::RansacParams.
+@param rmse Final root-mean-square error.
+@param ninliers Final number of inliers.
+ */
+
+CV_EXPORTS Mat estimateGlobalMotionRansac(
+        InputArray points0, InputArray points1, int model = MM_AFFINE,
+        const RansacParams &params = RansacParams::default2dMotion(MM_AFFINE),
+        float *rmse = 0, int *ninliers = 0);
+
+//  @brief 所有全局運動估計方法的基類。
+/** @brief Base class for all global motion estimation methods.
+ */
+
+class CV_EXPORTS MotionEstimatorBase
+{
+public:
+    virtual ~MotionEstimatorBase() {}
+
+    // 設置運動模型
+    /** @brief Sets motion model.
+    @param val Motion model. See cv::videostab::MotionModel.
+     */
+    virtual void setMotionModel(MotionModel val) { motionModel_ = val; }
+
+    /**
+    @return Motion model. See cv::videostab::MotionModel.
+    */
+    virtual MotionModel motionModel() const { return motionModel_; }
+
+// @brief 估計兩個二維點雲之間的全局運動。
+// @param points0 2D 點的源集 (32F)。
+// @param points1 目標 2D 點集 (32F)。
+// @param ok 表示是否成功估計了運動。
+// @return 3x3 2D 變換矩陣 (32F)。
+
+    /** @brief Estimates global motion between two 2D point clouds.
+    @param points0 Source set of 2D points (32F).
+    @param points1 Destination set of 2D points (32F).
+    @param ok Indicates whether motion was estimated successfully.
+    @return 3x3 2D transformation matrix (32F).
+     */
+    virtual Mat estimate(InputArray points0, InputArray points1, bool *ok = 0) = 0;
+
+protected:
+    MotionEstimatorBase(MotionModel model) { setMotionModel(model); }
+
+private:
+    MotionModel motionModel_;
+};
+
+// @brief 描述了一種健壯的基於 RANSAC 的全局 2D 運動估計方法，該方法可最大限度地減少 L2 誤差。
+
+/** @brief Describes a robust RANSAC-based global 2D motion estimation method which minimizes L2 error.
+ */
+class CV_EXPORTS MotionEstimatorRansacL2 : public MotionEstimatorBase
+{
+public:
+    MotionEstimatorRansacL2(MotionModel model = MM_AFFINE);
+
+    void setRansacParams(const RansacParams &val) { ransacParams_ = val; }
+    RansacParams ransacParams() const { return ransacParams_; }
+
+    void setMinInlierRatio(float val) { minInlierRatio_ = val; }
+    float minInlierRatio() const { return minInlierRatio_; }
+
+    virtual Mat estimate(InputArray points0, InputArray points1, bool *ok = 0) CV_OVERRIDE;
+
+private:
+    RansacParams ransacParams_;
+    float minInlierRatio_;
+};
+
+// @brief 描述了一種最小化 L1 誤差的全局 2D 運動估計方法。
+// @note 要使用此方法，您必須構建具有 CLP 庫支持的 OpenCV。 
+/** @brief Describes a global 2D motion estimation method which minimizes L1 error.
+@note To be able to use this method you must build OpenCV with CLP library support. :
+ */
+class CV_EXPORTS MotionEstimatorL1 : public MotionEstimatorBase
+{
+public:
+    MotionEstimatorL1(MotionModel model = MM_AFFINE);
+
+    virtual Mat estimate(InputArray points0, InputArray points1, bool *ok = 0) CV_OVERRIDE;
+
+private:
+    std::vector<double> obj_, collb_, colub_;
+    std::vector<double> elems_, rowlb_, rowub_;
+    std::vector<int> rows_, cols_;
+
+    void set(int row, int col, double coef)
+    {
+        rows_.push_back(row);
+        cols_.push_back(col);
+        elems_.push_back(coef);
+    }
+};
+
+/** @brief Base class for global 2D motion estimation methods which take frames as input.
+ */
+// @brief 以幀為輸入的全局 2D 運動估計方法的基類。
+
+class CV_EXPORTS ImageMotionEstimatorBase
+{
+public:
+    virtual ~ImageMotionEstimatorBase() {}
+
+    virtual void setMotionModel(MotionModel val) { motionModel_ = val; }
+    virtual MotionModel motionModel() const { return motionModel_; }
+
+    virtual void setFrameMask(InputArray mask)
+    {
+        if (!mask.empty())
+            CV_Error(Error::StsNotImplemented, "Mask support is not implemented.");
+    }
+
+    virtual Mat estimate(const Mat &frame0, const Mat &frame1, bool *ok = 0) = 0;
+
+protected:
+    ImageMotionEstimatorBase(MotionModel model) { setMotionModel(model); }
+
+private:
+    MotionModel motionModel_;
+};
+
+class CV_EXPORTS FromFileMotionReader : public ImageMotionEstimatorBase
+{
+public:
+    FromFileMotionReader(const String &path);
+
+    virtual Mat estimate(const Mat &frame0, const Mat &frame1, bool *ok = 0) CV_OVERRIDE;
+
+private:
+    std::ifstream file_;
+};
+
+class CV_EXPORTS ToFileMotionWriter : public ImageMotionEstimatorBase
+{
+public:
+    ToFileMotionWriter(const String &path, Ptr<ImageMotionEstimatorBase> estimator);
+
+    virtual void setMotionModel(MotionModel val) CV_OVERRIDE { motionEstimator_->setMotionModel(val); }
+    virtual MotionModel motionModel() const CV_OVERRIDE { return motionEstimator_->motionModel(); }
+
+    virtual void setFrameMask(InputArray mask) CV_OVERRIDE { motionEstimator_->setFrameMask(mask); }
+
+    virtual Mat estimate(const Mat &frame0, const Mat &frame1, bool *ok = 0) CV_OVERRIDE;
+
+private:
+    std::ofstream file_;
+    Ptr<ImageMotionEstimatorBase> motionEstimator_;
+};
+
+// 描述了一種使用關鍵點檢測和光流進行匹配的全局 2D 運動估計方法。
+/** @brief Describes a global 2D motion estimation method which uses keypoints detection and optical flow for
+matching.
+ */
+class CV_EXPORTS KeypointBasedMotionEstimator : public ImageMotionEstimatorBase
+{
+public:
+    KeypointBasedMotionEstimator(Ptr<MotionEstimatorBase> estimator);
+
+    virtual void setMotionModel(MotionModel val) CV_OVERRIDE { motionEstimator_->setMotionModel(val); }
+    virtual MotionModel motionModel() const CV_OVERRIDE { return motionEstimator_->motionModel(); }
+
+    void setDetector(Ptr<FeatureDetector> val) { detector_ = val; }
+    Ptr<FeatureDetector> detector() const { return detector_; }
+
+    void setOpticalFlowEstimator(Ptr<ISparseOptFlowEstimator> val) { optFlowEstimator_ = val; }
+    Ptr<ISparseOptFlowEstimator> opticalFlowEstimator() const { return optFlowEstimator_; }
+
+    void setOutlierRejector(Ptr<IOutlierRejector> val) { outlierRejector_ = val; }
+    Ptr<IOutlierRejector> outlierRejector() const { return outlierRejector_; }
+
+    virtual void setFrameMask(InputArray mask) CV_OVERRIDE { mask_ = mask.getMat(); }
+
+    virtual Mat estimate(const Mat &frame0, const Mat &frame1, bool *ok = 0) CV_OVERRIDE;
+    Mat estimate(InputArray frame0, InputArray frame1, bool *ok = 0);
+
+private:
+    Ptr<MotionEstimatorBase> motionEstimator_;
+    Ptr<FeatureDetector> detector_;
+    Ptr<ISparseOptFlowEstimator> optFlowEstimator_;
+    Ptr<IOutlierRejector> outlierRejector_;
+    Mat mask_;
+
+    std::vector<uchar> status_;
+    std::vector<KeyPoint> keypointsPrev_;
+    std::vector<Point2f> pointsPrev_, points_;
+    std::vector<Point2f> pointsPrevGood_, pointsGood_;
+};
+
+#if defined(HAVE_OPENCV_CUDAIMGPROC) && defined(HAVE_OPENCV_CUDAOPTFLOW)
+
+class CV_EXPORTS KeypointBasedMotionEstimatorGpu : public ImageMotionEstimatorBase
+{
+public:
+    KeypointBasedMotionEstimatorGpu(Ptr<MotionEstimatorBase> estimator);
+
+    virtual void setMotionModel(MotionModel val) CV_OVERRIDE { motionEstimator_->setMotionModel(val); }
+    virtual MotionModel motionModel() const CV_OVERRIDE { return motionEstimator_->motionModel(); }
+
+    void setOutlierRejector(Ptr<IOutlierRejector> val) { outlierRejector_ = val; }
+    Ptr<IOutlierRejector> outlierRejector() const { return outlierRejector_; }
+
+    virtual Mat estimate(const Mat &frame0, const Mat &frame1, bool *ok = 0) CV_OVERRIDE;
+    Mat estimate(const cuda::GpuMat &frame0, const cuda::GpuMat &frame1, bool *ok = 0);
+
+private:
+    Ptr<MotionEstimatorBase> motionEstimator_;
+    Ptr<cuda::CornersDetector> detector_;
+    SparsePyrLkOptFlowEstimatorGpu optFlowEstimator_;
+    Ptr<IOutlierRejector> outlierRejector_;
+
+    cuda::GpuMat frame0_, grayFrame0_, frame1_;
+    cuda::GpuMat pointsPrev_, points_;
+    cuda::GpuMat status_;
+
+    Mat hostPointsPrev_, hostPoints_;
+    std::vector<Point2f> hostPointsPrevTmp_, hostPointsTmp_;
+    std::vector<uchar> rejectionStatus_;
+};
+
+#endif // defined(HAVE_OPENCV_CUDAIMGPROC) && defined(HAVE_OPENCV_CUDAOPTFLOW)
+
+/** @brief Computes motion between two frames assuming that all the intermediate motions are known.
+@param from Source frame index.
+@param to Destination frame index.
+@param motions Pair-wise motions. motions[i] denotes motion from the frame i to the frame i+1
+@return Motion from the Source frame to the Destination frame.
+ */
+
+// @brief 假設所有中間運動都是已知的，計算兩幀之間的運動。
+// @param 來自源幀索引。
+// @param 到目標幀索引。
+// @param 運動成對運動。 motions[i] 表示從第 i 幀到第 i+1 幀的運動
+// @return 從源幀到目標幀的運動。
+//
+
+CV_EXPORTS Mat getMotion(int from, int to, const std::vector<Mat> &motions);
+
+//! @}
+
+} // namespace videostab
+} // namespace cv
+
+#endif
+```
 
 
 
