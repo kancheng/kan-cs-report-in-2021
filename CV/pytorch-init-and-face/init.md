@@ -104,7 +104,6 @@ cv2.imshow('image', img)
 cv2.waitKey(0)
 ```
 
-
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/4.png)
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/5.png)
@@ -116,6 +115,7 @@ cv2.waitKey(0)
 
 Python 類別
 
+
 4. W3_PyTorch_Basic.ipynb
 
 PyTorch 基礎，過程中有報錯，修正完畢。
@@ -123,7 +123,12 @@ PyTorch 基礎，過程中有報錯，修正完畢。
 
 5. W3_Regression_Python.ipynb
 
+Regression 圖像
+
+
 6. W3_Tensor_Tutorial.ipynb
+
+Tensor 實作
 
 
 ### 視頻人臉檢測
