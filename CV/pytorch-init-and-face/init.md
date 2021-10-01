@@ -7,6 +7,7 @@
 
 bilibili : https://www.bilibili.com/video/bv1jf4y1J7rh
 
+github project : https://github.com/kancheng/kan-cs-report-in-2021/tree/main/CV/pytorch-init-and-face
 
 ## 0. About
 
