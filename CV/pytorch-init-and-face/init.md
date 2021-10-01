@@ -291,14 +291,13 @@ ffmpeg -i $ID.mp4 -ac 1 ar 16000 $ID.wav
 ```
 
 
-ffmpeg 合併
+ffmpeg 合併影像與音源
 
 ```
 import subprocess
 cmd = 'ffmpeg -i new_music.wav -i star_gray.mp4 out.mp4'
 subprocess.call(cmd)#返回‘0’就说明合并成功了
 ```
-
 
 
 Reference
@@ -338,7 +337,9 @@ Reference
 > 
 > https://www.youtube.com/watch?v=8nbuqYw2OCw
 >
-
+> https://www.wongwonggoods.com/linux/ffmpeg/ffmpeg_merge_video/
+>
+>
 
 ### 輸出運行後的結果
 
