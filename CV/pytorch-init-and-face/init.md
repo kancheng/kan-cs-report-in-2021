@@ -299,6 +299,22 @@ cmd = 'ffmpeg -i new_music.wav -i star_gray.mp4 out.mp4'
 subprocess.call(cmd)#返回‘0’就说明合并成功了
 ```
 
+ffmpeg 合併多個影像
+
+先建立一個設定檔 `merge-video.txt`
+
+```
+file '/path/to/file1.mp4'
+file '/path/to/file2.mp4'
+file '/path/to/file3.mp4'
+```
+
+合併指令
+
+```
+ffmpeg -f concat -safe 0 -i merge_video.txt -c copy output.mp4
+```
+
 
 Reference
 
