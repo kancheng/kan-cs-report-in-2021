@@ -150,7 +150,7 @@ Tensor 實作
 ### 視頻人臉檢測
 
 
-解決邏輯：OpenCV 匯出匯入影像 & OpenCV 影像人臉識別 -> OpenCV 匯入影像進行人臉識別後匯出無音源影像 -> 嘗試事先分離音源後合併前者成果 
+解決邏輯：OpenCV 匯出匯入影像 & OpenCV 影像人臉識別 -> OpenCV 匯入影像進行人臉識別後匯出無音源影像 -> 嘗試事先分離音源後合併前者影像成果。 
 
 事前測試
 
@@ -267,9 +267,21 @@ cv2.destroyAllWindows()
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/7.png)
 
 
-當結束 Jupyter Notebook
+當結束 Jupyter Notebook 時，可以看到已經匯出的 avi 檔案。
 
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/8.png)
+
+
+切記！ 每個影片的寬高必須要特別注意！
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/9.png)
+
+
+ffmpeg install - mac
+
+```
+brew install ffmpeg
+```
 
 
 ffmpeg - mp4 to wav
@@ -290,6 +302,10 @@ subprocess.call(cmd)#返回‘0’就说明合并成功了
 
 
 Reference
+
+```
+由於這次作業涉略大量的知識，考量到可以用在日後不同課程的問題上，在此列出作為紀錄。
+```
 
 >
 > https://docs.opencv.org/master/dd/d43/tutorial_py_video_display.html
@@ -325,6 +341,12 @@ Reference
 
 
 ### 輸出運行後的結果
+
+
+1. The mind behind Linux | Linus Torvalds
+
+
+2. They Shall Not Grow Old & 1917 & DUNKIRK
 
 
 
