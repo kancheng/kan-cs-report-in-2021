@@ -92,17 +92,36 @@ conda install pytorch torchvision torchaudio -c pytorch
 
 OpenCV 的呈現，當中的圖檔並沒有附上，所以自己額外再去 Google 下載， `House256rgb.png` 的圖檔，加入專案中，同時修改路徑。
 
+最後面畫紅點與藍線的部分，由於紅點並不明顯，而且一開始的部分有 Bug，查完錯後，自己額外修改成畫多點的虛線。
 
+```
+for k in range(0, 225):
+    img[k, 100, :] = [225, 0, 0]
+for g in range(1,200,2):
+    img[g, g] = [ 0, 0, 255]
+
+cv2.imshow('image', img)
+cv2.waitKey(0)
+```
+
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/4.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/5.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/6.png)
 
 
 3. W2_Python-Class.ipynb
 
+Python 類別
 
 4. W3_PyTorch_Basic.ipynb
 
+PyTorch 基礎，過程中有報錯，修正完畢。
+
 
 5. W3_Regression_Python.ipynb
-
 
 6. W3_Tensor_Tutorial.ipynb
 
