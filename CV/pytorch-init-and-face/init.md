@@ -267,6 +267,11 @@ cv2.destroyAllWindows()
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/7.png)
 
 
+當結束 Jupyter Notebook
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/8.png)
+
+
 ffmpeg - mp4 to wav
 
 ```
