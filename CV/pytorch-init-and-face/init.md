@@ -69,8 +69,42 @@ conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
 conda install pytorch torchvision torchaudio -c pytorch
 ```
 
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/1.png)
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/2.png)
+
+
+
 ### 執行所有 ipynb 文件
 
+程式碼與匯出的檔案結果於專案的 `code` 目錄下，而為了課堂呈現匯出 PDF 於專案的 `pdf` 目錄下。在解釋各 `*.ipynb` 執行狀況。
+
+
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-init-and-face/pic/3.png)
+
+
+1. W2_Numpy.ipynb
+
+為 CS 231n Python & NumPy Tutorial 的教程。
+
+
+2. W2_OpenCV.ipynb
+
+OpenCV 的呈現，當中的圖檔並沒有附上，所以自己額外再去 Google 下載， `House256rgb.png` 的圖檔，加入專案中，同時修改路徑。
+
+
+
+
+3. W2_Python-Class.ipynb
+
+
+4. W3_PyTorch_Basic.ipynb
+
+
+5. W3_Regression_Python.ipynb
+
+
+6. W3_Tensor_Tutorial.ipynb
 
 
 ### 視頻人臉檢測
