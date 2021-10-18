@@ -74,7 +74,7 @@ y = torch.randn(10,4, requires_grad=True)
 
 目标函数 :
 
-$$f={||\ max(\ XW,)\ -\ Y\ ||}_F^2$$
+$$f={||\ max(\ XW, 0)\ -\ Y\ ||}_F^2$$
 
 手推写出已下表达式，并用 Pytorch 进行实现。
 $$ (1)\quad \frac{\partial f}{\partial W}  \quad (2)\quad \frac{\partial f}{\partial X} \quad (3)\quad \frac{\partial f}{\partial Y}$$
@@ -83,7 +83,7 @@ $$ (1)\quad \frac{\partial f}{\partial W}  \quad (2)\quad \frac{\partial f}{\par
 
 (1) 斜变函数与单位阶跃函数
 
-$$f={||\ max(\ XW,)\ -\ Y\ ||}_F^2$$
+$$f={||\ max(\ XW, 0)\ -\ Y\ ||}_F^2$$
 
 目标函数当中的 max(x,0) 表示的是单位斜变函数，也就是所谓的整流线性单位函式（Rectified Linear Unit, ReLU），该函数特性在小于时归零，大于零保持原值，但当进行微分时，会变成单位阶跃函数(Heaviside step function)，函数小于零时为零，大于零时则为一，其两者数学图形如下(来源为 Wikipedia)。
 
@@ -137,7 +137,7 @@ $$X\ =\ \left[\begin{matrix}x_{11}&\cdots&x_{14}\\\vdots&\ddots&\vdots\\x_{10\ 1
 
 \section{数学推导证明}
 
-$$f={||\ max(\ XW,)\ -\ Y\ ||}_F^2 \rightarrow f\ =tr({(max(XW,0)-\ Y)}^T.(max(XW,0)-\ Y))$$
+$$f={||\ max(\ XW, 0)\ -\ Y\ ||}_F^2 \rightarrow f\ =tr({(max(XW,0)-\ Y)}^T.(max(XW,0)-\ Y))$$
 
 %% \because  \therefore
 
@@ -157,14 +157,14 @@ $$=tr({2(max(XW,\ 0)-Y)}^T.\varepsilon(XW)\odot XdW)$$
 
 $$=tr({2((max(XW,\ 0)-Y)\odot\varepsilon(XW))}^T.XdW)$$
 
-$$\therefore\quad \frac{df}{dW}\ =\ 2X^T((max(XW,0)-\ Y)\mathrm{\odot\varepsilon(XW)})$$
+$$\therefore\quad \frac{df}{dW}\ =\ 2X^T((max(XW,0)-\ Y)\odot\varepsilon(XW))$$
 
-$$df\ =tr({((max(XW,\ 0)-Y)\odot\varepsilon(XW))}^T.dX.W)$$
+$$df\ =tr(2{((max(XW,\ 0)-Y)\odot\varepsilon(XW))}^T.dX.W)$$
 
 $$=tr(2W{((max(XW,\ 0)-Y)\odot\varepsilon(XW))}^T.dX)$$
 
-$$\therefore\quad \frac{df}{dX}\ =\ 2((max(XW,0)-\ Y)\mathrm{\odot\varepsilon(XW)}).W^T$$
-
+$$\therefore\quad \frac{df}{dX}\ =\ 2((max(XW,0)-\ Y) \odot\varepsilon(XW)).W^T$$
+\textit{}
 \newpage
 
 \section{Pytorch 程式码实现}
