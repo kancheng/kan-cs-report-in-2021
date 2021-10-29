@@ -46,3 +46,10 @@ Method
 4. https://github.com/allen108108/Model-Optimizer_Implementation/blob/master/MNIST%20-%20CNN.ipynb
 
 5. https://github.com/allen108108/Model-Optimizer_Implementation
+
+6. https://www.jiqizhixin.com/articles/2019-05-27-4
+
+7. https://pytorch.org/hub/pytorch_vision_shufflenet_v2/
+
+
+
