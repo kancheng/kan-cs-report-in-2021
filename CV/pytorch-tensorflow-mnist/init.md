@@ -17,9 +17,9 @@
 
 >
 >  順帶研究如下 ：
->   1) TensorFlow
->   2) CNN 歷年來的研究發展
->   3) Google TensorFlow MNIST Training 的 Code
+>   1) Pytorch & MNIST 訓練
+>   2) TensorFlow & MNIST 訓練
+>   3) CNN 歷年來的研究發展
 >   涵蓋解決的過程連結。
 >
 
