@@ -63,5 +63,7 @@
 
 20. https://www.jiqizhixin.com/articles/2018-07-12-4
 
+21. https://towardsdatascience.com/the-brief-history-of-convolutional-neural-networks-45afa1046f7f
+
 
 
