@@ -37,33 +37,31 @@
 
 7. https://zhuanlan.zhihu.com/p/76275427
 
-8. https://www.reddit.com/r/MachineLearning/comments/cikcr3/d_shufflenet_v2_on_mnist_dataset/
+8. https://zhuanlan.zhihu.com/p/39068853
 
-9. https://github.com/allen108108/Model-Optimizer_Implementation/blob/master/MNIST%20-%20ShuffleNetV2.ipynb
+9. https://www.reddit.com/r/MachineLearning/comments/cikcr3/d_shufflenet_v2_on_mnist_dataset/
 
-10. https://github.com/allen108108/Model-Optimizer_Implementation/blob/master/MNIST%20-%20CNN.ipynb
+10. https://github.com/allen108108/Model-Optimizer_Implementation
 
-11. https://github.com/allen108108/Model-Optimizer_Implementation
+11. https://www.jiqizhixin.com/articles/2019-05-27-4
 
-12. https://www.jiqizhixin.com/articles/2019-05-27-4
+12. https://pytorch.org/hub/pytorch_vision_shufflenet_v2/
 
-13. https://pytorch.org/hub/pytorch_vision_shufflenet_v2/
+13. https://blog.csdn.net/EasonCcc/article/details/109001050
 
-14. https://blog.csdn.net/EasonCcc/article/details/109001050
+14. https://arxiv.org/abs/1807.11164
 
-15. https://arxiv.org/abs/1807.11164
+15. https://github.com/ZhuYun97/ShuffleNet-v2-Pytorch
 
-16. https://github.com/ZhuYun97/ShuffleNet-v2-Pytorch
+16. https://www.jiqizhixin.com/articles/2019-06-03-14
 
-17. https://www.jiqizhixin.com/articles/2019-06-03-14
+17. https://www.zhihu.com/question/32673260
 
-18. https://www.zhihu.com/question/32673260
+18. https://blog.csdn.net/JueChenYi/article/details/77116011
 
-19. https://blog.csdn.net/JueChenYi/article/details/77116011
+19. https://www.plob.org/article/13244.html
 
-20. https://www.plob.org/article/13244.html
-
-21. https://www.jiqizhixin.com/articles/2018-07-12-4
+20. https://www.jiqizhixin.com/articles/2018-07-12-4
 
 
 
