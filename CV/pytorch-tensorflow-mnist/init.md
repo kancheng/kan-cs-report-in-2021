@@ -11,7 +11,7 @@
 
 改進程式碼
 
-![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-mnist/pic/1.png)
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/pytorch-tensorflow-mnist/pic/1.png)
 
 ### Reference
 
