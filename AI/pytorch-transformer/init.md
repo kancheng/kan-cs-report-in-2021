@@ -35,4 +35,9 @@ Transformer 模型根據 Attention Is All You Need 進行實現。
 
 11. https://zhuanlan.zhihu.com/p/420820453
 
+12. https://www.youtube.com/watch?v=n9TlOhRjYoc
+
+13. https://www.youtube.com/watch?v=N6aRv06iv2g
+
+
 
