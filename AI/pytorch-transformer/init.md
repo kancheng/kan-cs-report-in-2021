@@ -24,3 +24,15 @@ Transformer 模型根據 Attention Is All You Need 進行實現。
 5. https://github.com/tensorflow/models/tree/master/official/nlp/transformer
 
 6. https://github.com/kancheng/nlp-tutorial
+
+7. https://towardsdatascience.com/how-to-code-the-transformer-in-pytorch-24db27c8f9ec
+
+8. https://github.com/SamLynnEvans/Transformer
+
+9. http://nlp.seas.harvard.edu/2018/04/03/attention.html
+
+10. https://zhuanlan.zhihu.com/p/411311520
+
+11. https://zhuanlan.zhihu.com/p/420820453
+
+
