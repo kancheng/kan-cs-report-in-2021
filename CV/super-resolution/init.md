@@ -12,7 +12,7 @@
 
 改進程式碼
 
-![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV//pic/1.png)
+![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/super-resolution/pic/1.png)
 
 
 
