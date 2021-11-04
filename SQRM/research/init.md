@@ -19,10 +19,15 @@ CVPR (Computer Vision)
 
 | 年代 | 論文名 | 研究者 | 
 | :----: | :----: | :----: | 
-| 2020 | Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild<br />在沒有任何監控之下 讓系統去學習從野外中取得的 Probably Symmetric Deformable 3D Objects 影像 | Shangzhe Wu(), University of Oxford; et al. |
-| 2019 | A Theory of Fermat Paths for Non-Line-of-Sight Shape Reconstruction<br />非視線形狀重建的費馬路徑理論 | Shumian Xin, Carnegie Mellon University; et al. |
+| 2020 | Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild<br />在沒有任何監控之下 讓系統去學習從野外中取得的 Probably Symmetric Deformable 3D Objects 影像 | Shangzhe Wu, University of Oxford<br />Christian Rupprecht, University of Oxford<br />Andrea Vedaldi, University of Oxford |
+
+| 2019 | A Theory of Fermat Paths for Non-Line-of-Sight Shape Reconstruction<br />非視線形狀重建的費馬路徑理論 | Shumian Xin, Carnegie Mellon University<br />
+Sotiris Nousias, University College London<br />Kiriakos N. Kutulakos, University of Toronto<br />Aswin C. Sankaranarayanan, Carnegie Mellon University<br />Srinivasa G. Narasimhan, Carnegie Mellon University<br />Ioannis Gkioulekas, Carnegie Mellon University |
+
 | 2018 | Taskonomy: Disentangling Task Transfer Learning<br />任務學：任務遷移學習的解耦 | Amir R. Zamir, Stanford University; et al. |
+
 | 2017 | Densely Connected Convolutional Networks<br />密集連接的卷積網絡 | Zhuang Liu, Tsinghua University; et al. |
+
 | 2017 | Learning from Simulated and Unsupervised Images through Adversarial Training<br />通過對抗訓練從模擬的和無監督的圖像中學習 | Ashish Shrivastava, Apple; et al. |
 | 2016 | Deep Residual Learning for Image Recognition<br />圖像識別中的深度殘差學習 | Kaiming He, Microsoft; et al. |
 | 2015 | DynamicFusion: Reconstruction and Tracking of Non-rigid Scenes in Real-Time<br />動態融合：實時非剛性場景的重建與跟踪 | Richard A. Newcombe, University of Washington; et al. |
