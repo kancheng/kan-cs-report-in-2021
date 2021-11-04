@@ -19,16 +19,16 @@ CVPR (Computer Vision)
 
 | 年代 | 論文名 | 研究者 | 
 | :----: | :----: | :----: | 
-| 2020 | Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild<br />在野外自然場景下可能對稱且可變形的 3D 對象的無監督學習 | Shangzhe Wu(), University of Oxford; et al. |
+| 2020 | Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild<br />在沒有任何監控之下 讓系統去學習從野外中取得的 Probably Symmetric Deformable 3D Objects 影像 | Shangzhe Wu(), University of Oxford; et al. |
 | 2019 | A Theory of Fermat Paths for Non-Line-of-Sight Shape Reconstruction<br />非視線形狀重建的費馬路徑理論 | Shumian Xin, Carnegie Mellon University; et al. |
 | 2018 | Taskonomy: Disentangling Task Transfer Learning<br />任務學：任務遷移學習的解耦 | Amir R. Zamir, Stanford University; et al. |
-| 2017 | Densely Connected Convolutional Networks<br />密集連接的捲積網絡 | Zhuang Liu, Tsinghua University; et al. |
+| 2017 | Densely Connected Convolutional Networks<br />密集連接的卷積網絡 | Zhuang Liu, Tsinghua University; et al. |
 | 2017 | Learning from Simulated and Unsupervised Images through Adversarial Training<br />通過對抗訓練從模擬的和無監督的圖像中學習 | Ashish Shrivastava, Apple; et al. |
 | 2016 | Deep Residual Learning for Image Recognition<br />圖像識別中的深度殘差學習 | Kaiming He, Microsoft; et al. |
 | 2015 | DynamicFusion: Reconstruction and Tracking of Non-rigid Scenes in Real-Time<br />動態融合：實時非剛性場景的重建與跟踪 | Richard A. Newcombe, University of Washington; et al. |
 | 2014 | What Camera Motion Reveals About Shape with Unknown BRDF<br />關於未知雙向反射分佈函數，攝像機運動揭示了什麼 | Manmohan Chandraker, NEC Labs America |
 | 2013 | Fast, Accurate Detection of 100,000 Object Classes on a Single Machine<br />在單個機器上快速、準確地對 100,000 個物體類別進行檢測 | Thomas Dean, Google; et al. |
-| 2012 | A Simple Prior-free Method for Non-Rigid Structure-from-Motion Factorization<br />一種簡單的不需要先驗信息的非剛性結構與運動恢復方法 | Yuchao Dai, Northwestern Polytechnical University; et al. |
+| 2012 | A Simple Prior-free Method for Non-Rigid Structure-from-Motion Factorization<br />一種簡單的不需要先驗資訊的非剛性結構與運動恢復方法 | Yuchao Dai, Northwestern Polytechnical University; et al. |
 | 2011 | Real-time Human Pose Recognition in Parts from Single Depth Images<br />針對單個深度圖像部件的實時人體姿態識別模型 | Jamie Shotton, Microsoft; et al. |
 | 2010 | Efficient computation of robust low-rank matrix approximations in the presence of missing data using the L1 norm<br />利用 L1 範數對數據缺失的魯棒低秩近似矩陣進行有效計算 | Anders Eriksson & Anton va den Hendel, University of Adelaide |
 | 2009 | Single Image Haze Removal Using Dark Channel Prior<br />暗通道先驗去霧 | Kaiming He, The Chinese University of Hong Kong; et al. |
