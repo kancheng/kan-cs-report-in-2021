@@ -68,7 +68,7 @@
 | 1998 | [The Problem of Degeneracy in Structure and Motion Recovery from Uncalibrated Image Sequences](https://www.semanticscholar.org/paper/882693f7a8e674472d9c605a35b73f498cbde82f) | Phil Torr, Microsoft<br />Andrew Fitzgibbon, University of Oxford<br />Andrew Zisserman, University of Oxford | 印度孟買 |
 
 
-NeurIPS (Machine Learning)
+### NeurIPS (Machine Learning) - NeurIPS Best Paper Awards
 
 | 年代 | 論文名 | 研究者 | 
 | :----: | :---- | :---- | 
