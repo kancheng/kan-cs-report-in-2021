@@ -4,11 +4,11 @@
 
 ## About
 
-歷年會議的最佳論文獎，並附件中文。
+歷年會議的最佳論文獎，並附件部分中文。
 
 ## Research
 
-CVPR (Computer Vision)
+### CVPR (Computer Vision) - CVPR Best Paper Award
 
 | 年代 | 論文名 | 研究者 | 
 | :----: | :---- | :---- | 
@@ -45,20 +45,38 @@ CVPR (Computer Vision)
 | 1988 | Large Hierarchical Object Recognition Using Libraries of Parameterized Model Sub-Parts | G. J. Ettinger |
 
 
+### ICCV (Computer Vision) - ICCV Best Paper Award (Marr Prize)
+
+| 年代 | 論文名 | 研究者 | 舉辦地 |
+| :----: | :---- | :---- |  :----: |
+| 2019 | [SinGAN: Learning a Generative Model from a Single Natural Image](https://www.semanticscholar.org/paper/SinGAN%3A-Learning-a-Generative-Model-from-a-Single-Shaham-Dekel/ccaf15d4ad006171061508ca0a99c73814671501) | Tamar Rott Shaham, Technion – Israel Institute of Technology<br />Tali Dekel, Google<br />Tomar Michaeli, Technion – Israel Institute of Technology | 韓國首爾 |
+| 2017 | [Mask R-CNN](https://www.semanticscholar.org/paper/ea99a5535388196d0d44be5b4d7dd02029a43bb2) | Kaiming He, Facebook AI Research<br />Georgia Gkioxari, Facebook AI Research<br />Piotr Dollar, Facebook AI Research<br />Ross Girshick, Facebook AI Research | 義大利威尼斯 |
+| 2015 | [Deep Neural Decision Forests](https://www.semanticscholar.org/paper/544998db166c047c70a61c5a5c54d10c5879ecf1) | Peter Kontschieder, Microsoft<br />Madalina Fiterau, Carnegie Mellon University<br />Antonio Criminisi, Microsoft<br />Samuel Rota Bulò, Microsoft | 智利聖地牙哥 |
+| 2013 | [From Large Scale Image Categorization to Entry-Level Categories](https://www.semanticscholar.org/paper/3bfeecf2aa26efe211985e19a967b2cb28012482) | Vicente Ordonez, University of North Carolina at Chapel Hill<br />Jia Deng, Stanford University<br />Yejin Choi, Stony Brook University<br />Alexander Berg, University of North Carolina at Chapel Hill<br />Tamara Berg, University of North Carolina at Chapel Hill | 澳大利亞雪梨 |
+| 2011 | [Relative Attributes](https://www.semanticscholar.org/paper/23e568fcf0192e4ff5e6bed7507ee5b9e6c43598) | Devi Parikh, Toyota Technological Institute at Chicago<br />Kristen Grauman, University of Texas at Austin | 西班牙巴塞隆納 |
+| 2009 | [Discriminative models for multi-class object layout](https://www.semanticscholar.org/paper/c90a0b7011bece4d7a5af1241410023273aa033e) | Chaitanya Desai, University of California, Irvine<br />Deva Ramanan, University of California, Irvine<br />Charless Fowlkes, University of California, Irvine | 日本京都 |
+| 2007 | [Population Shape Regression From Random Design Data](https://www.semanticscholar.org/paper/163088df67df32b51aedded945195666db2ce8d0) | Bradley Davis, University of North Carolina at Chapel Hill<br />P. Thomas Fletcher, University of Utah<br />Elizabeth Bullitt, University of North Carolina at Chapel Hill<br />Sarang Joshi, University of Utah | 巴西里約熱內盧 |
+| 2005 | [Globally Optimal Estimates for Geometric Reconstruction Problems](https://www.semanticscholar.org/paper/daf03088b494c8ab508e99f12437883a4e86585d) | Fredrik Kahl, Lund University<br />Didier Henrion, Laboratory for Analysis and Architecture of Systems | 中國北京 |
+| 2003 | [Image-based Rendering using Image-based Priors](https://www.semanticscholar.org/paper/d78b523c9bafc73da74f75756acd7eb6b4c0076d) | Andrew Fitzgibbon, University of Oxford<br />Yonatan Wexler, Weizmann Institute of Science<br />Andrew Zisserman, University of Oxford | 法國尼斯 |
+| 2003 | [Image Parsing: Unifying Segmentation, Detection and Recognition](https://www.semanticscholar.org/paper/cca9200d9da958b7f90eab901b2f30c04f1e0e9c) | Zhuowen Tu, University of California, Los Angeles<br />Xiangrong Chen, University of California, Los Angeles<br />Alan L. Yuille, University of California, Los Angeles<br />Song-Chun Zhu, University of California, Los Angeles | 法國尼斯 |
+| 2003 | [Detecting Pedestrians using Patterns of Motion and Appearance](https://www.semanticscholar.org/paper/4521ac382772e90607c23af1cff34a04df37e6c4) | Paul Viola, Microsoft<br />Michael J. Jones, Mitsubishi Electric Research Laboratories<br />Daniel Snow, Mitsubishi Electric Research Laboratories | 法國尼斯 |
+| 2001 | [Probabilistic Tracking with Exemplars in a Metric Space](https://www.semanticscholar.org/paper/7bfe222d83e9dd9117bc4f8508962a01fb0b1626) | Kentaro Toyama & Andrew Blake, Microsoft | 加拿大溫哥華 |
+| 2001 | [The Space of All Stereo Images](https://www.semanticscholar.org/paper/f868eb0cfaad536f17ac018377c75ae320ee2027) | Steven Seitz, University of Washington | 加拿大溫哥華 |
+| 1999 | [A Theory of Shape by Space Carving](https://www.semanticscholar.org/paper/0f6de146325a19d23b5b2cc3607a9d2c8d8f22a8) | Kiriakos Kutulakos, University of Rochester<br />Steven Seitz, Carnegie Mellon University | 希臘克基拉島 |
+| 1999 | [Euclidean Reconstruction and Reprojection up to Subgroups](https://www.semanticscholar.org/paper/fff8169a57d8c5b398c7190291bea52928a84dce) | Yi Ma, University of California, Berkeley<br />Stefano Soatto, Washington University in St. Louis<br />Jana Kosecka, University of California, Berkeley<br />Shankar Sastry, University of California, Berkeley | 希臘克基拉島 |
+| 1998 | [Self-calibration and metric reconstruction in spite of varying and unknown internal camera parameters](https://www.semanticscholar.org/paper/84544813dbe31fd317c2942df9bad8f63bf506e7) | Marc Pollefeys, Katholieke Universiteit Leuven<br />Reinhard Koch, Katholieke Universiteit Leuven<br />Luc Van Gool, Katholieke Universiteit Leuven | 印度孟買 |
+| 1998 | [The Problem of Degeneracy in Structure and Motion Recovery from Uncalibrated Image Sequences](https://www.semanticscholar.org/paper/882693f7a8e674472d9c605a35b73f498cbde82f) | Phil Torr, Microsoft<br />Andrew Fitzgibbon, University of Oxford<br />Andrew Zisserman, University of Oxford | 印度孟買 |
+
+
 NeurIPS (Machine Learning)
 
 | 年代 | 論文名 | 研究者 | 
-| :----: | :----: | :----: | 
+| :----: | :---- | :---- | 
 |  |  |  |
 |  |  |  |
 
 	
-ICCV (Computer Vision)
 
-| 年代 | 論文名 | 研究者 | 
-| :----: | :----: | :----: | 
-|  |  |  |
-|  |  |  |
 
 
 ## Reference
@@ -66,3 +84,5 @@ ICCV (Computer Vision)
 1. https://jeffhuang.com/best_paper_awards/
 
 2. https://www.thecvf.com/?page_id=413
+
+3. https://bbs.cvmart.net/articles/909/1987-2017-nian-li-jie-iccv-zui-jia-lun-wen-marr-prize-paper-hui-zong
