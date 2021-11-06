@@ -15,4 +15,19 @@
 ![](https://github.com/kancheng/kan-cs-report-in-2021/blob/main/CV/super-resolution/pic/1.png)
 
 
+### Reference
+
+1. https://github.com/twtygqyy/pytorch-SRResNet
+
+2. https://zhuanlan.zhihu.com/p/364872992
+
+3. https://blog.csdn.net/qq_33254870/article/details/103183080
+
+4. https://stackoverflow.com/questions/15091112/accessing-data-range-with-h5py/15091604
+
+5. https://github.com/ckkelvinchan/BasicVSR-IconVSR
+
+6. https://blog.csdn.net/qq_33254870/article/details/103183080
+
+7. https://blog.csdn.net/gwplovekimi/article/details/83302780
 
