@@ -24,6 +24,8 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 4. https://github.com/eriklindernoren/PyTorch-GAN
 
+5. https://arxiv.org/abs/2001.06937
+
 
 ### Toys
 
@@ -44,5 +46,7 @@ https://github.com/eriklindernoren/PyTorch-GAN
 8. https://towardsdatascience.com/how-to-create-unique-pok%C3%A9mon-using-gans-ea1cb6b6a5c2
 
 9. https://zhuanlan.zhihu.com/p/26514298
+
+10. https://www.jiqizhixin.com/articles/2020-03-03-12
 
 
