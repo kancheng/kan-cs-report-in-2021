@@ -36,4 +36,6 @@
 
 8. https://towardsdatascience.com/how-to-create-unique-pok%C3%A9mon-using-gans-ea1cb6b6a5c2
 
+9. https://zhuanlan.zhihu.com/p/26514298
+
 
