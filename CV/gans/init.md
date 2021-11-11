@@ -9,6 +9,10 @@
 
 ### Tasks
 
+https://github.com/eriklindernoren/PyTorch-GAN
+
+選一個感興趣的 GAN 程式，下載並運行，寫出閱讀總結，並對應程式碼標註出公式以及網路所對應的程式碼。(阐述清楚且不超过两页)
+
 
 ### Reference
 
@@ -16,6 +20,9 @@
 
 2. https://zhuanlan.zhihu.com/p/383550870
 
+3. https://github.com/hindupuravinash/the-gan-zoo
+
+4. https://github.com/eriklindernoren/PyTorch-GAN
 
 
 ### Toys
