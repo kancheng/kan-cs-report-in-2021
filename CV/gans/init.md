@@ -14,6 +14,13 @@ https://github.com/eriklindernoren/PyTorch-GAN
 在 GitHub 的 `eriklindernoren/PyTorch-GAN` 專案中選一個感興趣的 GAN 程式，下載並運行，寫出閱讀總結，並對應程式碼標註出公式以及網路所對應的程式碼。(阐述清楚且不超过两页)
 
 
+### Note
+
+1. https://zhuanlan.zhihu.com/p/97333146
+
+2. https://github.com/sudiptodip15/ClusterGAN
+
+
 ### Reference
 
 1. https://www.jiqizhixin.com/articles/2019-01-23-20
