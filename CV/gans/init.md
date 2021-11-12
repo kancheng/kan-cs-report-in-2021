@@ -4,7 +4,7 @@
 
 ## About
 
-此作業以 LaTeX 版本為主，詳見專案目錄下的 report.pdf，並使用騰訊文檔進行 Demo。而程式碼則詳見專案目錄 code 下的 、.ipynb 。
+此作業以 LaTeX 版本為主，詳見專案目錄下的 report.pdf，並使用騰訊文檔進行 Demo。而程式碼則詳見專案目錄 code 。
 
 
 ### Tasks
@@ -16,7 +16,7 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 ### Note
 
-在此蒐集 `InfoGAN` 、 `Cluster GAN` 的技術文章。
+在此蒐集 `InfoGAN` 、 `Cluster GAN`、 `GAN` 的技術文章與教學連結說明如下。
 
 1. https://zhuanlan.zhihu.com/p/97333146
 
@@ -33,6 +33,8 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 ### Reference
 
+這回作業直接相關文章連結如下。
+
 1. https://www.jiqizhixin.com/articles/2019-01-23-20
 
 2. https://zhuanlan.zhihu.com/p/383550870
@@ -43,8 +45,12 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 5. https://arxiv.org/abs/2001.06937
 
+6. https://arxiv.org/abs/1606.03657
+
 
 ### Toys
+
+作業過程中所蒐集來相關文章與知識連結如下。
 
 1. https://ieeexplore.ieee.org/abstract/document/9312188
 
