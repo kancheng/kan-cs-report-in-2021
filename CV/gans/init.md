@@ -16,9 +16,19 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 ### Note
 
+在此蒐集 `InfoGAN` 、 `Cluster GAN` 的技術文章。
+
 1. https://zhuanlan.zhihu.com/p/97333146
 
 2. https://github.com/sudiptodip15/ClusterGAN
+
+3. https://www.jianshu.com/p/fa892c81df60
+
+4. https://blog.csdn.net/u011699990/article/details/71599067
+
+5. https://www.jianshu.com/p/1b84adec15e7
+
+6. https://flashgene.com/archives/30400.html
 
 
 ### Reference
