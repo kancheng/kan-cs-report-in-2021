@@ -30,6 +30,8 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 6. https://flashgene.com/archives/30400.html
 
+7. https://www.jiqizhixin.com/articles/2018-10-29-21
+
 
 ### Reference
 
