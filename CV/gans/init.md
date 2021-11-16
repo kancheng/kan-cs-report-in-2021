@@ -104,6 +104,8 @@ https://github.com/eriklindernoren/PyTorch-GAN
 
 7. https://www.jiqizhixin.com/articles/2018-10-29-21
 
+8. https://github.com/zhoubolei/awesome-generative-modeling
+
 
 ## Reference
 
