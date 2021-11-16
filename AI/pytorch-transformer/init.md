@@ -41,4 +41,14 @@ Transformer 模型根據 Attention Is All You Need 進行實現。
 
 14. https://github.com/huggingface/transformers
 
+15. https://github.com/harvardnlp/annotated-transformer
+
+16. https://medium.com/analytics-vidhya/bert-implementation-multi-head-attention-4a10142636fe
+
+17. https://github.com/fawazsammani/chatbot-transformer
+
+18. https://wmathor.com/index.php/archives/1455/
+
+19. https://zhuanlan.zhihu.com/p/48731949
+
 
