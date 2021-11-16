@@ -10,23 +10,23 @@
 
 將終端機指令結果匯出。
 
-Linux (UNIX-like)
+### Linux (UNIX-like)
 
-匯出結果，若已經有該檔案則直接覆蓋檔案內容。
+1. 匯出結果，若已經有該檔案則直接覆蓋檔案內容。
 
 ```
 $ [要記錄的指令] > 檔名
 $ ls -al > test.txt
 ```
 
-增加內容至該檔案。
+2. 增加內容至該檔案。
 
 ```
 $ [要記錄的指令] >> 檔名
 $ history > test.txt
 ```
 
-輸出整個終端機操作的過程紀錄。
+3. 輸出整個終端機操作的過程紀錄。
 
 ```
 $ script test.txt
@@ -35,12 +35,49 @@ $ exit
 ```
 
 
-Windows (PowerShell)
+### Windows (PowerShell)
 
+1. 匯出結果，若已經有該檔案則直接覆蓋檔案內容。
 
 ```
+$ [要記錄的指令] > 檔名
+$ ls > test.txt
+```
+
+2. 增加內容至該檔案。
 
 ```
+$ [要記錄的指令] >> 檔名
+$ ipconfig > test.txt
+```
+
+3. 輸出操作紀錄
+
+建立 `*.ps1` 的檔案，並匯出。
+
+test.ps1
+
+```
+[指令 1]
+[指令 2]
+[指令 3]
+```
+```
+ls
+ipconfig
+python -V
+```
+
+輸出後覆蓋或輸出後添加。
+
+```
+> .\test.ps1 > output.txt
+```
+```
+> .\test.ps1 >> output.txt
+```
+
+
 
 ## Tasks
 
