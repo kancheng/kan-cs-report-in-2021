@@ -22,6 +22,12 @@
 
 2. https://sunniesuhyoung.github.io/DST-page/
 
+3. https://arxiv.org/abs/2003.11038
+
+4. https://www.youtube.com/watch?v=7qUzfcn6TPk&feature=youtu.be
+
+5. https://www.youtube.com/watch?v=mVU5tSxS4is&feature=youtu.be
+
 
 ## Reference
 
