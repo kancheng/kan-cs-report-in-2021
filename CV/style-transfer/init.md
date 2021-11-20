@@ -15,7 +15,12 @@
 
 3. 配置環境，測試自己的圖片進行風格遷移的結果，截圖
 
+
 ### 文章
+
+Sunnie S. Y. Kim, Nicholas Kolkin, Jason Salavon, Gregory Shakhnarovich, 2020, Deformable Style Transfer, (ECCV 2020).
+
+### 摘要和貢獻
 
 可變形風格轉移
 Deformable Style Transfer
@@ -51,7 +56,9 @@ In contrast to previous works that are limited to human faces, DST works for ima
 
 – We evaluate DST on a range of style transfer instances, with images of faces, animals, vehicles, and landscapes, and through a user study demonstrate that our framework can augment existing style transfer algorithms to dramatically improve the perceived stylization quality, at minimal cost to the percieved content preservation.
 
-### 
+### 程式碼
+
+其研究得專案內容程式碼為 `sunniesuhyoung/DST`，而自己實際測試該專案的範例程式碼在 `code` 目錄下的 `demo_DST_Kan.ipynb` 檔案。
 
 
 ## Note
@@ -65,6 +72,8 @@ In contrast to previous works that are limited to human faces, DST works for ima
 4. https://www.youtube.com/watch?v=7qUzfcn6TPk&feature=youtu.be
 
 5. https://www.youtube.com/watch?v=mVU5tSxS4is&feature=youtu.be
+
+6. https://github.com/sunniesuhyoung/DST
 
 
 ## Reference
