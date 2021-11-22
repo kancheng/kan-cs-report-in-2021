@@ -13,22 +13,6 @@
 
 ### 文章和摘要和貢獻
 
-1. Mihai Dusmanu et al., 2021, "Privacy-Preserving Image Features via Adversarial Affine Subspace Embeddings", CVPR.
-
-2. Wei Ji et al., 2021, "Learning Calibrated Medical Image Segmentation via Multi-rater Agreement Modeling", CVPR.
-
-3. Shitong Luo et al., 2021, "Diffusion Probabilistic Models for 3D Point Cloud Generation", CVPR.
-
-4. Jennifer J. Sun et al., 2021, "Task Programming: Learning Data Efficient Behavior Representations", CVPR.
-
-5. Kehong Gong et al., 2021, "PoseAug: A Differentiable Pose Augmentation Framework for 3D Human Pose Estimation", CVPR.
-
-6. Shunsuke Saito et al., 2021, "SCANimate: Weakly Supervised Learning of Skinned Clothed Avatar Networks", CVPR.
-
-7. Lea Müller et al., 2021, "On Self-Contact and Human Pose", CVPR.
-
-8. Abhishek Badki et al., 2021, "Binary TTC: A Temporal Geofence for Autonomous Navigation", CVPR.
-
 
 1. 通過對抗仿射子空間嵌入保護隱私的圖像特徵
 
@@ -91,8 +75,6 @@ Abhishek Badki et al., 2021, "Binary TTC: A Temporal Geofence for Autonomous Nav
 
 其研究得專案內容程式碼為 `XX`，而自己實際測試該專案的範例程式碼在 `code` 目錄下的 `XX.ipynb` 檔案。
 
-
-## Note
 
 ## Reference
 
