@@ -11,11 +11,23 @@
 
 对之前的论文清单做延伸，内容包括但不限于：论文内容、代码复现、实验创新等，形成一份报告（原则上不多于4页）
 
-### 文章
+### 文章和摘要和貢獻
 
-Sunnie S. Y. Kim, Nicholas Kolkin, Jason Salavon, Gregory Shakhnarovich, 2020, Deformable Style Transfer, (ECCV 2020).
+1. Mihai Dusmanu et al., 2021, "Privacy-Preserving Image Features via Adversarial Affine Subspace Embeddings", CVPR.
 
-### 摘要和貢獻
+2. Wei Ji et al., 2021, "Learning Calibrated Medical Image Segmentation via Multi-rater Agreement Modeling", CVPR.
+
+3. Shitong Luo et al., 2021, "Diffusion Probabilistic Models for 3D Point Cloud Generation", CVPR.
+
+4. Jennifer J. Sun et al., 2021, "Task Programming: Learning Data Efficient Behavior Representations", CVPR.
+
+5. Kehong Gong et al., 2021, "PoseAug: A Differentiable Pose Augmentation Framework for 3D Human Pose Estimation", CVPR.
+
+6. Shunsuke Saito et al., 2021, "SCANimate: Weakly Supervised Learning of Skinned Clothed Avatar Networks", CVPR.
+
+7. Lea Müller et al., 2021, "On Self-Contact and Human Pose", CVPR.
+
+8. Abhishek Badki et al., 2021, "Binary TTC: A Temporal Geofence for Autonomous Navigation", CVPR.
 
 
 ### 程式碼
@@ -26,4 +38,21 @@ Sunnie S. Y. Kim, Nicholas Kolkin, Jason Salavon, Gregory Shakhnarovich, 2020, D
 ## Note
 
 ## Reference
+
+
+1. Mihai Dusmanu, Johannes L. Schönberger, Sudipta N. Sinha, Marc Pollefeys, 2021, "Privacy-Preserving Image Features via Adversarial Affine Subspace Embeddings", CVPR.
+
+2. Wei Ji, Shuang Yu, Junde Wu, Kai Ma, Cheng Bian, Qi Bi, Jingjing Li, Hanruo Liu, Li Cheng, Yefeng Zheng, 2021, "Learning Calibrated Medical Image Segmentation via Multi-rater Agreement Modeling", CVPR.
+
+3. Shitong Luo, Wei Hu, 2021, "Diffusion Probabilistic Models for 3D Point Cloud Generation", CVPR.
+
+4. Jennifer J. Sun, Ann Kennedy, Eric Zhan, David J. Anderson, Yisong Yue, Pietro Perona, 2021, "Task Programming: Learning Data Efficient Behavior Representations", CVPR.
+
+5. Kehong Gong, Jianfeng Zhang, Jiashi Feng, 2021, "PoseAug: A Differentiable Pose Augmentation Framework for 3D Human Pose Estimation", CVPR.
+
+6. Shunsuke Saito, Jinlong Yang, Qianli Ma, Michael J. Black, 2021, "SCANimate: Weakly Supervised Learning of Skinned Clothed Avatar Networks", CVPR.
+
+7. Lea Müller, Ahmed A. A. Osman, Siyu Tang, Chun-Hao P. Huang, Michael J. Black, 2021, "On Self-Contact and Human Pose", CVPR.
+
+8. Abhishek Badki, Orazio Gallo, Jan Kautz, Pradeep Sen, 2021, "Binary TTC: A Temporal Geofence for Autonomous Navigation", CVPR.
 
