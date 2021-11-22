@@ -18,20 +18,28 @@
 
 ```
 Mihai Dusmanu et al., 2021, "Privacy-Preserving Image Features via Adversarial Affine Subspace Embeddings", CVPR.
+
+ - 個人隱私保護
 ```
 
+許多計算機視覺系統需要將使用者的圖像特徵上傳到雲端進行處理和儲存，而該研究發現可以利用這些特徵來恢復有關場景或主題的敏感資訊，比如通過重建原始圖像的外觀。而研究者們為了解決這個隱私問題，提出了一種新的隱私保護特徵表示。他們工作的核心思想是通過將每個特徵描述符去嵌入到包含原始特徵和對抗性特徵樣本的仿射子空間中，而後再進行刪除每個特徵描述符的約束。基於子空間到子空間距離的概念到啟用隱私保護的特徵是相互匹配的呈現。而研究者通過實驗證明了自己的方法的有效性及其與視覺定位和映射，跟人臉認證應用的高度實際相關性。前者與原始特徵相比，該研究的方法使對手恢復私人資訊得更加困難，相同的概念可以應用於其他領域，例如用於生物特徵認證的面部特徵。
 
 2. 通過多評估者協議建模學習校準的醫學圖像分割
 
 ```
 Wei Ji et al., 2021, "Learning Calibrated Medical Image Segmentation via Multi-rater Agreement Modeling", CVPR.
+
+ - 醫療
 ```
 
+在醫學圖像分析領域中，通常會收集多個註釋，而每一個註釋都來自不同的臨床專家或評估者，以期望減少可能的診斷錯誤。而從計算機視覺的角度來看，採用通過多數票或來自首選評估者的簡單註釋來獲得的真實標籤已成為一種常見做法。當然此過程會忽略在原始多評估者註釋中根深蒂固的同意或不同意的等豐富資訊。研究者為了解決這個問題，他們建議對多評價者做一個名為 MR-Net 的 ex-plicitly model the multi-rater (dis-)agreement，此模型有兩個主要貢獻。首先，設計了一個專業知識推斷模塊或 EIM，將各個評分者的專業知識水平作為先驗知識嵌入，以形成高級語義的特徵。其次，研究者的方法能夠從粗略預測中重建多評分者的評分，並進一步利用多評分者（不一致）線索來提高分割性能，而此研究的工作是第一個進行在不同專業水平下為醫學圖像分割生成校準預測的研究，同時該研究在不同成像方式的五個醫學分割任務中進行了廣泛的實證實驗，證明 MRNet 對廣泛的醫學分割任務的有效性和適用性。
 
 3. 用於 3D 點雲生成的擴散概率模型
 
 ```
 Shitong Luo et al., 2021, "Diffusion Probabilistic Models for 3D Point Cloud Generation", CVPR.
+
+ - 3D 形狀建模
 ```
 
 
@@ -39,6 +47,8 @@ Shitong Luo et al., 2021, "Diffusion Probabilistic Models for 3D Point Cloud Gen
 
 ```
 Jennifer J. Sun et al., 2021, "Task Programming: Learning Data Efficient Behavior Representations", CVPR.
+
+ - 數據行為
 ```
 
 
@@ -46,6 +56,8 @@ Jennifer J. Sun et al., 2021, "Task Programming: Learning Data Efficient Behavio
 
 ```
 Kehong Gong et al., 2021, "PoseAug: A Differentiable Pose Augmentation Framework for 3D Human Pose Estimation", CVPR.
+
+ - 3D 人體姿勢
 ```
 
 
@@ -53,6 +65,8 @@ Kehong Gong et al., 2021, "PoseAug: A Differentiable Pose Augmentation Framework
 
 ```
 Shunsuke Saito et al., 2021, "SCANimate: Weakly Supervised Learning of Skinned Clothed Avatar Networks", CVPR.
+
+ -  3D 掃描
 ```
 
 
@@ -60,6 +74,8 @@ Shunsuke Saito et al., 2021, "SCANimate: Weakly Supervised Learning of Skinned C
 
 ```
 Lea Müller et al., 2021, "On Self-Contact and Human Pose", CVPR.
+
+ - 3D 人體姿勢
 ```
 
 
@@ -67,6 +83,8 @@ Lea Müller et al., 2021, "On Self-Contact and Human Pose", CVPR.
 
 ```
 Abhishek Badki et al., 2021, "Binary TTC: A Temporal Geofence for Autonomous Navigation", CVPR.
+
+ - 路徑規劃
 ```
 
 
