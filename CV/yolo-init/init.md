@@ -20,6 +20,7 @@
 
 2. https://curiousily.com/posts/object-detection-on-custom-dataset-with-yolo-v5-using-pytorch-and-python/
 
+3. https://www.youtube.com/watch?v=b59xfUZZqJE
 
 
 ## Reference
