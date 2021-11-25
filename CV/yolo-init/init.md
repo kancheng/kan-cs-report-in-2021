@@ -28,6 +28,14 @@
 
 6. https://blog.csdn.net/weixin_41929524/article/details/118915489
 
+7. https://medium.com/deelvin-machine-learning/yolov4-vs-yolov5-db1e0ac7962b
+
+8. https://towardsdatascience.com/yolo-v4-or-yolo-v5-or-pp-yolo-dad8e40f7109
+
+9. https://towardsdatascience.com/yolov4-5d-an-enhancement-of-yolov4-for-autonomous-driving-2827a566be4a
+
+10. https://towardsdatascience.com/darkeras-execute-yolov3-yolov4-object-detection-on-keras-with-darknet-pre-trained-weights-5e8428b959e2
+
 
 ## Reference
 
@@ -35,3 +43,10 @@
 
 2. https://github.com/ultralytics/yolov5
 
+3. https://github.com/WongKinYiu/PyTorch_YOLOv4
+
+4. https://github.com/NVIDIA/nvidia-docker
+
+5. https://blog.csdn.net/SUNbrightness/article/details/116783604
+
+6. https://github.com/tranleanh/darkeras-yolov4
