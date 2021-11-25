@@ -22,6 +22,12 @@
 
 3. https://www.youtube.com/watch?v=b59xfUZZqJE
 
+4. https://www.pyimagesearch.com/2018/11/12/yolo-object-detection-with-opencv/
+
+5. https://makerpro.cc/2020/12/how-to-use-yolov5/
+
+6. https://blog.csdn.net/weixin_41929524/article/details/118915489
+
 
 ## Reference
 
