@@ -13,6 +13,39 @@
 
 2. 文檔中說明跟之前版本的具體改進和不同。
 
+### YOLOv4
+
+跟據 `tranleanh/darkeras-yolov4` 範例進行測試。
+
+
+### YOLOv5
+
+根據 `ultralytics/yolov5` 的專案執行，同時執行 Pytorch 的 YOLOV5 官方範例。
+
+```
+conda create -n test-volo python=3.8
+
+conda activate test-volo
+
+git clone https://github.com/ultralytics/yolov5.git
+
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+
+pip install -r requirements.txt
+
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+python detect.py --weights yolov5s.pt
+
+python detect.py --weights yolov5m.pt
+
+python detect.py --weights yolov5s6.pt
+
+python detect.py --weights yolov5m6.pt
+
+python detect.py --source data/images --weights yolov5s.pt --conf 0.25
+```
+
 
 ## Note
 
