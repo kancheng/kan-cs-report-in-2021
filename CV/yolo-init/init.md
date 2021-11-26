@@ -71,6 +71,10 @@ python detect.py --source data/images --weights yolov5s.pt --conf 0.25
 
 11. https://cloudxlab.com/blog/video-processing-with-yolov4-and-tensorflow/
 
+12. https://blog.roboflow.com/yolov5-is-here/
+
+13. https://blog.roboflow.com/yolov4-versus-yolov5/
+
 
 
 ## Reference
