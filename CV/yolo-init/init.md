@@ -36,6 +36,9 @@
 
 10. https://towardsdatascience.com/darkeras-execute-yolov3-yolov4-object-detection-on-keras-with-darknet-pre-trained-weights-5e8428b959e2
 
+11. https://cloudxlab.com/blog/video-processing-with-yolov4-and-tensorflow/
+
+
 
 ## Reference
 
