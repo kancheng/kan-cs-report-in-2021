@@ -13,14 +13,14 @@
 
 2. 文檔中說明跟之前版本的具體改進和不同。
 
-### YOLOv4
+### YOLOv4 & YOLOv3
 
-跟據 `tranleanh/darkeras-yolov4` 範例進行測試。
+跟據 `tranleanh/darkeras-yolov4` 範例進行測試，而由於 YOLO 的發展原因，此版本為 TensorFlow 版本，程式碼於 code 目錄中可以找到。
 
 
 ### YOLOv5
 
-根據 `ultralytics/yolov5` 的專案執行，同時執行 Pytorch 的 YOLOV5 官方範例。
+根據 `ultralytics/yolov5` 的專案執行，同時執行 Pytorch 的 YOLOV5 官方範例，程式碼於 code 目錄中可以找到。
 
 ```
 conda create -n test-volo python=3.8
