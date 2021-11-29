@@ -6,7 +6,8 @@ PKU 2021 個人實驗報告作業
 
 ## About
 
-Transformer 模型根據 Attention Is All You Need 進行實現。
+Transformer 模型根據 Attention Is All You Need 進行實現，閱讀論文、說明並理解論文內容，同時完成哈佛 NLP 文件，若行有餘力，對其實現與改進。
+
 
 ## Task
 
