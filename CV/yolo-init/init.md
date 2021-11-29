@@ -75,6 +75,8 @@ python detect.py --source data/images --weights yolov5s.pt --conf 0.25
 
 13. https://blog.roboflow.com/yolov4-versus-yolov5/
 
+14. https://zhuanlan.zhihu.com/p/399104828
+
 
 
 ## Reference
