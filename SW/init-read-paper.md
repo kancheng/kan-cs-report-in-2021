@@ -5,6 +5,8 @@
 
 ## 科技論文寫作 Scientific Writing
 
+從下面期刊來源，進行翻譯、閱讀並寫出心得。
+
 1. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (SCI IF 16.389), 2021
 
 2. IEEE Journal on Selected Areas in Communications (SCI IF 9.114), 2021
