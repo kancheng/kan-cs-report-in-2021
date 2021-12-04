@@ -5,7 +5,7 @@
 
 ## 科技論文寫作 Scientific Writing
 
-從下列各出版物/中找出近 5 年來與自己的研究方向相關的文章，按照北京大學學位論文對參考文獻要求，採用 Endnote、Mendeley、Zotero、Citavi、Papers 等任一種軟體，規範管理文章，並將統一格式管理的結果用 LaTeX 排版展示，並對採用的管理軟體做評價或體會。
+從下列各出版物/中找出近 5 年來與自己的研究方向相關的文章，按照北京大學學位論文對參考文獻要求，採用 Endnote、Mendeley、Zotero、Citavi、Papers 等任一種軟體，規範管理文章，並將統一格式管理的結果用 LaTeX 排版展示，並對採用的管理軟體做評價或體會。若可行則可以將前項作業與此一項作業用 LaTeX 處理成北京大學論文格式。
 
 - IEEE Transaction/Magazine/Journal
 
