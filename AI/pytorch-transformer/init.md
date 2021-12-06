@@ -9,6 +9,28 @@ PKU 2021 個人實驗報告作業
 Transformer 模型根據 Attention Is All You Need 進行實現，閱讀論文、說明並理解論文內容，同時完成哈佛 NLP 文件，若行有餘力，對其實現與改進。
 
 
+## Goals
+
+The Annotated Transformer
+
+Q1: NO GPU available
+
+- A1: a survey about transformer
+- Example: https://arxiv.org/pdf/1809.02165.pdf
+
+Q2: code plagiarism
+
+- In particular, all code and documentation should be entirely your own work.
+
+You may consult with other students about high-level design strategies related to programming assignments, but you may not copy code or use the structure or organization of another student's program.
+
+-If you use any code or functions found from the internet, please tell us the reference link and how do you use it. 
+
+Direct code copy from the internet would be considered violation of this policy.
+
+- If we find there are two returned assignments same in large proportional code, both of the assignments would be considered violation of this policy.
+
+
 ## Task
 
 Assignment 2: Code for transformers(25p)
