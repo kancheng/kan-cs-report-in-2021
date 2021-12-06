@@ -24,7 +24,7 @@ Q2: code plagiarism
 
 You may consult with other students about high-level design strategies related to programming assignments, but you may not copy code or use the structure or organization of another student's program.
 
--If you use any code or functions found from the internet, please tell us the reference link and how do you use it. 
+- If you use any code or functions found from the internet, please tell us the reference link and how do you use it. 
 
 Direct code copy from the internet would be considered violation of this policy.
 
