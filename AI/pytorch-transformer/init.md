@@ -201,4 +201,17 @@ If we find there are two returned assignments same in large proportional code, b
 
 19. https://zhuanlan.zhihu.com/p/48731949
 
+20. https://zhuanlan.zhihu.com/p/410776234
+
+21. https://zhuanlan.zhihu.com/p/311156298
+
+22. https://arxiv.org/abs/2111.14556
+
+23. https://zhuanlan.zhihu.com/p/341995737
+
+24. https://jishuin.proginn.com/p/763bfbd5f55d
+
+25. https://mp.weixin.qq.com/s/0LAYmXsGjxBwCm5roXFOtQ
+
+
 
