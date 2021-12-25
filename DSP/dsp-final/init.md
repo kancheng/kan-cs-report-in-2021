@@ -1,5 +1,13 @@
 # DSP Homework
 
+
+## Details
+
+此報告為該作業的測試文件與前期準備工作紀錄，而程式碼部分則為 `774889315/DigitalMediaTech` 專案下的 main.cpp 檔案。
+
+https://github.com/774889315/DigitalMediaTech
+
+
 ## About
 
 以 ITM 为参考软件,在以下任务中任选 1 项:
